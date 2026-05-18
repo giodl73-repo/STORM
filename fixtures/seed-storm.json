@@ -1,0 +1,58 @@
+{
+  "document_id": "storm:seed:mill-race-flood",
+  "weather_systems": [
+    {
+      "system_id": "weather:late-autumn-raintrain",
+      "label": "Late autumn raintrain",
+      "kind": "heavy_rain",
+      "seasonality": "late autumn",
+      "signals": [
+        {
+          "signal_id": "signal:three-day-warm-rain",
+          "description": "Warm rain persists for three days before river rise.",
+          "lead_time": "3 days"
+        }
+      ],
+      "evidence_refs": [{ "source_id": "seed", "path": "fixtures\\seed-storm.json", "anchor": "weather:late-autumn-raintrain" }]
+    }
+  ],
+  "hazard_events": [
+    {
+      "event_id": "hazard:mill-race-flood",
+      "label": "Mill race flood",
+      "weather_system": "weather:late-autumn-raintrain",
+      "hazard_kind": "flood_damage",
+      "exposure": "Low mill path, grain store, and footbridge are exposed.",
+      "consequence": "Flood timing threatens grain, route access, and repair labor.",
+      "affected_systems": [
+        { "repo": "porto", "handoff": "Route closure, terrain access, and floodplain place evidence." },
+        { "repo": "ceres", "handoff": "Storage loss, mill downtime, and labor shock evidence." },
+        { "repo": "flora", "handoff": "Riverbank plant damage and regrowth/recovery window evidence." },
+        { "repo": "fauna", "handoff": "Displaced animals and disease-vector habitat evidence." },
+        { "repo": "rite", "handoff": "Public obligation and legitimacy pressure around flood response." },
+        { "repo": "banish", "handoff": "Playable flood-response pressure without STORM owning mechanics." }
+      ],
+      "evidence_refs": [{ "source_id": "seed", "path": "fixtures\\seed-storm.json", "anchor": "hazard:mill-race-flood" }]
+    }
+  ],
+  "preparedness_profiles": [
+    {
+      "profile_id": "preparedness:sandbag-mill-path",
+      "label": "Sandbag mill path",
+      "target_hazard": "hazard:mill-race-flood",
+      "preparation": "Stage barriers and move grain before river crest.",
+      "tradeoff": "Uses dry labor hours that CERES might need for harvest.",
+      "evidence_refs": [{ "source_id": "seed", "path": "fixtures\\seed-storm.json", "anchor": "preparedness:sandbag-mill-path" }]
+    }
+  ],
+  "recovery_windows": [
+    {
+      "window_id": "recovery:bridge-before-freeze",
+      "hazard_event": "hazard:mill-race-flood",
+      "timing": "after water falls and before first freeze",
+      "recovery_action": "Repair footbridge and dry grain store.",
+      "downstream_decision": "BANISH can choose route repair, grain salvage, or winter shelter labor.",
+      "evidence_refs": [{ "source_id": "seed", "path": "fixtures\\seed-storm.json", "anchor": "recovery:bridge-before-freeze" }]
+    }
+  ]
+}
