@@ -19,7 +19,7 @@ right sibling repo.
 | 01 | Workspace foundation | active | Create repo skeleton, Rust crates, seed fixture, docs, skills, and first tested contract. |
 | 02 | Consumer probes | pending | Add BANISH/PORTO/CERES/FAUNA/FLORA/RITE/CANON fixture probes and panel-loop review. |
 | 03 | Hazard expansion | pending | Generate 50-100 weather/hazard/disaster candidates and rubric gaps. |
-| 04 | Publisher planning | pending | Plan CROP/PEBBLE/FLETCH/PROOF publishing after fixture shape stabilizes. |
+| 04 | Publisher planning | active | First FLETCH local registry seed published; CROP/PEBBLE/PROOF boundaries remain planned. |
 
 ## Success criteria
 

@@ -1,0 +1,35 @@
+{
+  "schema_version": "fletch.registry.v1",
+  "generated_by": "STORM foundation assets",
+  "registry_id": "storm-foundation-assets",
+  "fletches": [
+    {
+      "id": "storm.foundation.seed-storm",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "fixtures/seed-storm.json"}],
+      "metadata": {"owner_repo": "STORM", "asset_kind": "seed-fixture", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["storm", "weather", "hazard", "fixture", "seed"]
+    },
+    {
+      "id": "storm.foundation.quality-rubric",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "QUALITY_RUBRIC.md"}],
+      "metadata": {"owner_repo": "STORM", "asset_kind": "quality-rubric", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["storm", "rubric", "evidence", "hazard", "quality"]
+    },
+    {
+      "id": "storm.foundation.scenario-expansion",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "docs/scenario-expansion.md"}],
+      "metadata": {"owner_repo": "STORM", "asset_kind": "scenario-map", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["storm", "hazards", "scenarios", "expansion", "planning"]
+    },
+    {
+      "id": "storm.foundation.game-needs-rubric",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "docs/game-needs-rubric.md"}],
+      "metadata": {"owner_repo": "STORM", "asset_kind": "consumer-rubric", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["storm", "banish", "game-needs", "hazards", "rubric"]
+    }
+  ]
+}
