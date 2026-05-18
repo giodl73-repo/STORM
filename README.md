@@ -64,9 +64,13 @@ signal/exposure evidence, preparedness tradeoffs, recovery windows, downstream
 handoff, and boundary discipline before an artifact is promoted beyond a draft
 seed.
 
+Scenario expansion and game-facing fixture triage live in
+[`docs\scenario-expansion.md`](docs\scenario-expansion.md) and
+[`docs\game-needs-rubric.md`](docs\game-needs-rubric.md).
+
 ```powershell
 cargo fmt --check
 cargo test --quiet
 cargo run -p storm-cli -- validate fixtures\seed-storm.json
-git grep -n "STORM" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
+git grep -n "scenario-expansion\|game-needs-rubric\|STORM-SCN-050" -- README.md QUALITY_RUBRIC.md docs\scenario-expansion.md docs\game-needs-rubric.md
 ```

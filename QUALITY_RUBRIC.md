@@ -18,6 +18,19 @@ A STORM seed passes the first gate when it proves a weather system can create a
 hazard event with exposure, preparedness tradeoff, recovery window, and bounded
 handoffs to sibling repos without becoming a forecasting engine or game mechanic.
 
+## Scenario expansion and game needs
+
+Use [`docs\scenario-expansion.md`](docs\scenario-expansion.md) for the current
+50-candidate weather/hazard/disaster expansion, and
+[`docs\game-needs-rubric.md`](docs\game-needs-rubric.md) when deciding which
+candidates become game-facing fixtures.
+
+Repeated gaps to watch: warning lead time and certainty, precise exposure
+classes, preparedness costs, recovery windows that can overlap later systems,
+and handoffs that stop before PORTO map effects, CERES economics, FAUNA/FLORA
+ecology simulation, RITE adjudication, CANON identity governance, LUCIA
+interpretation, or BANISH mechanics.
+
 Validation:
 
 ```powershell
