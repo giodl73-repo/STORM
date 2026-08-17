@@ -1,0 +1,50 @@
+{
+  "document_id": "storm:proof-depth:unknown-weather-system",
+  "weather_systems": [
+    {
+      "system_id": "weather:late-autumn-raintrain",
+      "label": "Late autumn raintrain",
+      "kind": "heavy_rain",
+      "seasonality": "late autumn",
+      "signals": [
+        {
+          "signal_id": "signal:three-day-warm-rain",
+          "description": "Warm rain persists for three days before river rise.",
+          "lead_time": "3 days"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "proof-depth",
+          "path": "fixtures\\fail-unknown-weather-system.json",
+          "anchor": "weather:late-autumn-raintrain"
+        }
+      ]
+    }
+  ],
+  "hazard_events": [
+    {
+      "event_id": "hazard:unresolved-flood",
+      "label": "Unresolved flood",
+      "weather_system": "weather:missing",
+      "hazard_kind": "flood_damage",
+      "exposure": "Low mill path, grain store, and footbridge are exposed.",
+      "consequence": "The hazard cannot be attributed to a declared weather system.",
+      "affected_systems": [
+        {
+          "repo": "porto",
+          "handoff": "Route closure and floodplain evidence."
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "proof-depth",
+          "path": "fixtures\\fail-unknown-weather-system.json",
+          "anchor": "hazard:unresolved-flood"
+        }
+      ]
+    }
+  ],
+  "preparedness_profiles": [],
+  "recovery_windows": []
+}

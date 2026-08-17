@@ -72,5 +72,9 @@ Scenario expansion and game-facing fixture triage live in
 cargo fmt --check
 cargo test --quiet
 cargo run -p storm-cli -- validate fixtures\seed-storm.json
+cargo run -p storm-cli -- validate fixtures\fail-unknown-weather-system.json
 git grep -n "scenario-expansion\|game-needs-rubric\|STORM-SCN-050" -- README.md QUALITY_RUBRIC.md docs\scenario-expansion.md docs\game-needs-rubric.md
 ```
+
+The seed fixture exits 0 with no error findings. The failure fixture exits 1
+with an `unknown_weather_system` finding for `hazard:unresolved-flood`.
