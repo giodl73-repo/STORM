@@ -78,3 +78,13 @@ git grep -n "scenario-expansion\|game-needs-rubric\|STORM-SCN-050" -- README.md 
 
 The seed fixture exits 0 with no error findings. The failure fixture exits 1
 with an `unknown_weather_system` finding for `hazard:unresolved-flood`.
+
+## License
+
+STORM uses separate licenses for software and content. Source code,
+executable scripts, tests, configuration, and ordinary software
+documentation are MIT-licensed (copyright Gio Della-Libera). Original
+non-software content is licensed CC BY-NC 4.0 (copyright Gio Della-Libera);
+commercial use of that content requires separate written permission.
+Third-party material remains under its own terms.
+See [LICENSE](./LICENSE) for the complete notice.
