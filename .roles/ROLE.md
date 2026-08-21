@@ -9,11 +9,23 @@ simulator, ritual adjudicator, or game mechanics system.
 
 | ID | Role | Lens |
 |---|---|---|
-| S-1 | Weather Systems Steward | Weather kind, seasonality, signals, and timing |
-| S-2 | Hazard/Exposure Analyst | Hazard event, exposure, consequence, and affected systems |
-| S-3 | Preparedness/Recovery Reviewer | Preparedness tradeoffs, recovery windows, and downstream decisions |
-| S-4 | Consumer Boundary Skeptic | Keeps PORTO, CERES, FAUNA, FLORA, RITE, CANON, LUCIA, and BANISH work out |
-| S-5 | Evidence Custodian | Source refs, anchors, validation, and pack readiness |
+| S-1 | [Weather Systems Steward](parliament/weather-systems-steward.md) | Weather kind, seasonality, signals, and timing |
+| S-2 | [Hazard/Exposure Analyst](parliament/hazard-exposure-analyst.md) | Hazard event, exposure, consequence, and affected systems |
+| S-3 | [Preparedness/Recovery Reviewer](parliament/preparedness-recovery-reviewer.md) | Preparedness tradeoffs, recovery windows, and downstream decisions |
+| S-4 | [Consumer Boundary Skeptic](parliament/consumer-boundary-skeptic.md) | Keeps PORTO, CERES, FAUNA, FLORA, RITE, CANON, LUCIA, and BANISH work out |
+| S-5 | [Evidence Custodian](stakeholders/evidence-custodian.md) | Source refs, anchors, validation, and pack readiness |
+
+## Productive tensions
+
+| Pulls | Against | Because |
+|---|---|---|
+| Weather Systems Steward | Hazard/Exposure Analyst | A weather pattern does not imply the same hazard or consequence for every exposure. |
+| Preparedness/Recovery Reviewer | Consumer Boundary Skeptic | Useful preparedness detail can become emergency advice or downstream mechanics. |
+| Hazard/Exposure Analyst | Evidence Custodian | High-consequence scenarios can tempt stronger claims than the evidence supports. |
+
+Unsupported forecasting or emergency-advice claims block first. Boundary leakage blocks next.
+Resolve scenario disputes with the seed and failure fixtures, keeping weather, exposure,
+preparedness, and downstream consequences as distinct records.
 
 ## Review order
 
